@@ -6,8 +6,8 @@ runtime nodejs18.x
 # concurrency 1
 # memory 1152
 # profile default
-# region us-west-1
-# timeout 30
+region eu-west-1
+timeout 30
 
 @http
 /*
@@ -19,6 +19,7 @@ plugin-remix
   src plugin-remix.js
 
 @static
+fingerprint true
 
 @tables
 user
@@ -30,3 +31,13 @@ password
 note
   pk *String  # userId
   sk **String # noteId
+
+shot
+  pk *String  # userId
+  sk **String # shotId
+
+@tables-indexes
+shot
+  pk *String # userId
+  sk **String # roundId
+  name byRound

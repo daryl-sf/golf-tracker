@@ -32,7 +32,7 @@ describe("smoke tests", () => {
     cy.findByRole("link", { name: /lets golf/i }).click();
 
     cy.findByRole("textbox", { name: /course/i }).type(testRound.course);
-    cy.get("input[type=date]").type(testRound.date);
+    cy.findByLabelText(/date/i).type(testRound.date);
     cy.findByRole("textbox", { name: /tee/i }).type(testRound.tee);
     cy.findByRole("button", { name: /submit/i }).click();
 

@@ -32,12 +32,12 @@ note
   pk *String  # userId
   sk **String # noteId
 
-shot
+round
   pk *String  # userId
   sk **String # shotId
 
-@tables-indexes
-shot
-  pk *String # userId
-  sk **String # roundId
-  name byRound
+# @tables-indexes
+# shot
+#   pk *String # userId
+#   sk **String # roundId
+#   name byRound

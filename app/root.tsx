@@ -45,7 +45,7 @@ export default function App() {
             <h1>Fore!</h1>
           </Link>
           <Link to="/login" className="h-full w-8 text-4xl grow-0">
-            {user ? "🏌️‍♂️" : "🚪"}
+            {user ? "🏌️‍♂️" : "Log In"}
           </Link>
         </nav>
         <main className="min-h-screen bg-white py-6 px-4">

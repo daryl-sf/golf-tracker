@@ -19,7 +19,6 @@ plugin-remix
   src plugin-remix.js
 
 @static
-fingerprint true
 
 @tables
 user

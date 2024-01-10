@@ -44,7 +44,7 @@ export default function Index() {
         Lets Golf
       </Link>
       <Link
-        to="/notes"
+        to="/rounds"
         className="rounded text-lime-900 bg-gray-100 py-4 px-6 w-full drop-shadow-md text-center text-xl font-extrabold"
       >
         Rounds in the Book
